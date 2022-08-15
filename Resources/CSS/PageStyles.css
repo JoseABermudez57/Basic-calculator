@@ -12,6 +12,9 @@ body{
 }
 
 .calculator-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-color: black;
     background-color: #696969;
     border-radius: 5px;
