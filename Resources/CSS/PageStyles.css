@@ -22,6 +22,11 @@ body{
     height: 50px;
     width: 70%;
 }
+.calculator-display button {
+    padding-right: 0%;
+    height: 50px;
+    width: 50px;
+}
 
 .calculator-buttons{
     display: flex;
