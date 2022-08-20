@@ -42,23 +42,22 @@ function obtainButtonValues(e) {
 }
 
 function operate(ope) {
-    obtainResult() //si hay operaciones pendientes se realizan primero
-    pn = x //ponemos el 1º n&uacute;mero en "numero en espera" para poder escribir el segundo.
-    op = ope; //guardamos tipo de operaci&oacute;n.
-    xi = true; //inicializar pantalla.
+    obtainResult() // Remaining operations are performed
+    pn = x // The first number is saved to write the next
+    op = ope; // The type of operation is saved
+    xi = true; // Initialize the display
 }
 
 function obtainResult() {
-    if (op == "") { //no hay ninguna operaci&oacute;n pendiente.
-        console.log(x);
-        display.innerHTML = x;	//
+    if (op == "") { // If there is no operation
+        display.innerHTML = x;	// Put the number on the display
     }
-    else { //con operaci&oacute;n pendiente resolvemos
-        sl = pn + op + x; // escribimos la operaci&oacute;n en una cadena
-        sol = eval(sl) //convertimos la cadena a c&oacute;digo y resolvemos
-        display.innerHTML = sol //mostramos la soludi&oacute;n
-        x = sol; //guardamos la soluci&oacute;n
-        op = ""; //ya no hayn operaciones pendientes
-        xi = true; //se puede reiniciar la pantalla.
+    else { // With pending operations
+        sl = pn + op + x; // Write the operation to a string
+        sol = eval(sl) // The operation is performed and saved
+        display.innerHTML = sol // Show the solution
+        x = sol; // Save the solution
+        op = ""; // No pending operations
+        xi = true; // You can reset the display
     }
 }
