@@ -11,8 +11,5 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^20.0.2"
-  },
-  "dependencies": {
-    "nes.css": "^2.3.0"
   }
 }
